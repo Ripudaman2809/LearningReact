@@ -7,7 +7,7 @@ const reactHeading = React.createElement("h1",{
 const reactRoot = ReactDOM.createRoot(document.querySelector("#rootReact"));
 // reactRoot.render(reactHeading);
 
-//create structure as well
+//create structure using React
 {/*
 <div id="parent">
     <div id ="child1">
