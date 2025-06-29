@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- If we have anything above or below the React root element, nothing will happen to it -->
+    <div id="rootHTML">
+        <h1>Hello World!</h1>
+    </div>
+    
+    <!-- If the React root element already contains something from the HTML directly without rendering React, 
+    then it will be replaced or overwritten when React is rendered on the root element. -->
+    <div id="rootReact">
+        <h1>Ripudaman Singh Walia</h1>
+    </div>
+
+    <div id="rootJS"></div>
+
+
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World from JS!";
+
+        const root = document.getElementById("rootJS");
+        root.appendChild(heading);
+    </script>
+
+    <!-- If loading React through CDN links make sure that the CDN links are present before the
+    JS script file containing React code or else we will get error -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>
