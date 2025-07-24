@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    height: 10vh;
+    background-color: white;
+
+}
+
+#nav-items> ul{
+    display: flex;
+    list-style-type: none ;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#nav-items{
+    padding-top: 5px;
+    width: 50%;
+}
+
+#nav-items> ul>li{
+    font-size:larger;
+    font-weight: bold;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+#logo-container{
+    width: 30%;
+    text-align: center;
+}
+#logo{
+    width:50%;
+    
+}
+
+#body{
+    padding: 2%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    height:100%;
+
+}
+
+#searchContainer{
+    padding: 0.2em;
+    width: 70%;
+    /* border: 2px solid black; */
+    display: flex;
+    background-color: white;
+    height: 7vh;
+    justify-content: space-between;
+    border-radius: 20px;margin-bottom: 10px;
+}
+
+#searchBox{
+    width: 89%;
+    border: 1px solid gray;
+    padding: 20px;
+    font-size: medium;
+    font-weight:larger;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+#searchBtn{
+    width: 10%;
+    padding-top: 9px;
+    text-align: center;
+    border : 1px solid;
+    border-radius: 20px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+     cursor: pointer;
+  transition: transform 0.2s ease;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+input::placeholder {
+    padding: 10px;
+  font-size: 1.1rem; 
+  font-weight: bold;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+#resContainer{
+    width:90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:25px;
+    padding: 2%;
+    /* border: 2px solid black; */
+}
+
+.resCard{
+    width: 23%;
+    /* aspect-ratio: 6 / 3; */
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.resCard:hover {
+  transform: scale(1.02); /* smooth zoom on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.resLogo{
+    width: 100%;
+    object-fit: cover;  
+    height: 175px;
+    border-radius: 10px;
+}
+
+.resNameandStars,.resCuisineandPrice{
+    padding-left: 10px;
+    font-weight: bold;
+    
+}
+.resNameandStars>h3{
+    margin: 0px;
+    margin-top: 15px;
+    padding-right: 10px;
+    white-space: nowrap;        /* Prevents wrapping */
+  overflow: hidden;           /* Hides the overflow */
+  text-overflow: ellipsis;    /* Adds "..." at the end */
+}
+
+.resNameandStars>p{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.resCuisineandPrice>p{
+    margin:0px;
+    font-weight:lighter;
+     padding-right: 10px;
+    color: grey;
+    white-space: nowrap;        /* Prevents wrapping */
+  overflow: hidden;           /* Hides the overflow */
+  text-overflow: ellipsis;    /* Adds "..." at the end */
+}
+
+/* .resCuisineandPrice{
+     padding-left: 10px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+#filtercontainer{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 90%;
+    padding-left: 3%;
+    margin-top: 10px;
+    
+}
+#resandfilterContainer{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#filterbtn{
+    width: 7%;
+    margin:5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    font-size: medium;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+#topratedres{
+    width: 15%;
+    margin:5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:black;
+    font-size: medium;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+#topratedres:hover, #filterbtn:hover,#searchBtn:hover{
+    transform: scale(1.02); /* smooth zoom on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
